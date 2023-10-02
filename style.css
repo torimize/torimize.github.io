@@ -1,0 +1,27 @@
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            color:honeydew;
+            padding:40px;
+            flex: 3;
+        }
+        div {
+            width:80%;
+            margin:auto;
+            padding-top: 40px;
+            display: flex;
+        }
+        h3 {
+            color:honeydew;
+            padding:40px;
+            flex: 1;
+        }
+        .hero {
+            background-color:darkgreen;
+        }
+        p {
+            margin:auto;
+            width:80%;
+            padding:40px;
+        }
