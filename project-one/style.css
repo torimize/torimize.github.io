@@ -15,22 +15,27 @@ font-family: 'Nerko One', cursive;
     margin: 0;
   }
 
-  header {
+  .hero {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    height: 400px;
-    background-image: url('images/peach-bg.jpg');
-    background-size: cover;
+    height: 600px;
   }
 
+  .hero img {
+    height:800px;
+    border-image-source: element(header);
+  }
+
+
   header h1 {
+    font-family: 'Nerko One', cursive;
     margin: 0;
     padding: 40px;
-    color: lightgreen;
   }
 
   .home-page h2 {
+    font-family: 'Nerko One', cursive;
     width: 80%;
     margin: 80px auto 20px auto;
   }
@@ -42,8 +47,9 @@ font-family: 'Nerko One', cursive;
   }
 
   .logo img {
+    width:10%;
     margin: 20px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
     flex: 25%;
   }
 
@@ -57,7 +63,7 @@ font-family: 'Nerko One', cursive;
     padding: 0;
     background: #232323;
     color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
   }
   
@@ -210,7 +216,7 @@ font-family: 'Nerko One', cursive;
   }
   footer {
     background: red;
-    padding: 90px 0;
+    padding: 60px 0 40px 0;
   }
   footer div {
     width: 80%;
@@ -222,4 +228,46 @@ font-family: 'Nerko One', cursive;
 
   .link {
     font-size: 50px;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+    width: 33.3333%
+  }
+  
+  .card {
+    background-color: #232323;
+    border:#ffffff 1px solid;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 1rem;
+  }
+  
+  .card_text {
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    overflow-x: hidden;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
   }
