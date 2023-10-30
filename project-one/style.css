@@ -19,14 +19,14 @@ font-family: 'Nerko One', cursive;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    height: 600px;
+    width:70%;
+    margin:auto;
   }
 
   .hero img {
-    height:800px;
-    border-image-source: element(header);
+    width:70%;
+    margin:auto;
   }
-
 
   header h1 {
     font-family: 'Nerko One', cursive;
@@ -34,10 +34,19 @@ font-family: 'Nerko One', cursive;
     padding: 40px;
   }
 
-  .home-page h2 {
-    font-family: 'Nerko One', cursive;
-    width: 80%;
-    margin: 80px auto 20px auto;
+  h1 {
+    font-family:'Nerko One', cursive;
+    line-height:0;
+    font-size:40px;
+  }
+
+  h2 {
+    font-family:'Nerko One', cursive;
+  }
+
+  h3 {
+    font-family:'Nerko One', cursive;
+    font-size:30px;
   }
 
   .branding {
@@ -53,12 +62,7 @@ font-family: 'Nerko One', cursive;
     flex: 25%;
   }
 
-  img {
-    width: 100%;
-  }
-
-  body
-  {
+  body {
     margin: 0;
     padding: 0;
     background: #232323;
@@ -144,7 +148,7 @@ font-family: 'Nerko One', cursive;
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #cdcdcd;
   }
   
   #menuToggle input:checked ~ span:nth-last-child(3)
@@ -184,6 +188,15 @@ font-family: 'Nerko One', cursive;
     padding: 10px 0;
     font-size: 22px;
   }
+
+  #menu img {
+    width:60%;
+    margin:auto;
+  }
+
+  #menu img:hover {
+    filter:invert(57%) sepia(80%) saturate(2878%) hue-rotate(330deg) brightness(104%) contrast(90%);
+  }
   
   #menuToggle input:checked ~ ul
   {
@@ -196,14 +209,12 @@ font-family: 'Nerko One', cursive;
     width: 80%;
     margin: auto;
   }
-  .parent div {
-    flex: 1;
-  }
+
   .parent .right {
-    padding-left: 40px;
+    flex:66.6%
   }
   .parent .left {
-    padding-right: 40px;
+    flex:33.3%
   }
   .two-col-content {
     display: flex;
@@ -216,24 +227,35 @@ font-family: 'Nerko One', cursive;
   }
   footer {
     background: red;
-    padding: 60px 0 40px 0;
+    padding: 30px 0 30px 0;
   }
   footer div {
     width: 80%;
-    margin: auto;
+    margin-left: 20px;
     color: white;
     font-family: 'Nerko One', cursive;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .link {
-    font-size: 50px;
+    font-size: 35px;
   }
 
-  img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+  .card_img img {
+    max-width:100%;
+    margin:auto;
+  }
+
+  .weapon {
+    width:80%;
+    margin:auto;
+  }
+
+  .horizontal {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex:33.3%;
   }
   
   .cards {
@@ -247,7 +269,7 @@ font-family: 'Nerko One', cursive;
   .cards_item {
     display: flex;
     padding: 1rem;
-    width: 33.3333%
+    width: 33.3333%;
   }
   
   .card {
@@ -270,4 +292,15 @@ font-family: 'Nerko One', cursive;
     overflow-x: hidden;
     margin-bottom: 1.25rem;    
     font-weight: 400;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .text-block {
+    color: white;
+    margin:auto;
+    padding-left:20px;
+    width: 80%;
   }
