@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 body {
-    margin:0 200px 0 200px;
     background-color: #1E1E1E;
     color:white;
 }
 
 section {
     font-family:'Montserrat', 'sans-serif';
+    width:80%;
+    margin:auto;
+    padding-top:80px;
+}
+figure {
+  margin:0;
 }
 
 .logo a {
@@ -152,10 +157,21 @@ header {
 
 main {
     margin-top:90px;
+    width:100%;
 }
 .flex {
     display:flex;
     margin:auto;
+}
+.candle {
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:-1;
+}
+.candle img {
+  width:510px;
+  z-index:-1;
 }
 .flex div {
     flex:1;
@@ -171,22 +187,22 @@ hr {
 
   .container {
     display:flex;
-    position: relative;
+    border:2px solid red;
     color: white;
   }
-  .container img {
-    flex:0.5;
+  .container div {
+    flex:1;
   }
+  
   .centered {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+z-index:2;
+position:relative;
   }
   .centered h1 {
     font-family:'Italiana', 'cursive';
     font-size:152px;
     margin:0;
+    z-index:99;
   }
 
   .centered h3 {

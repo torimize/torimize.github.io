@@ -55,14 +55,14 @@
             <div class="right-column">
                 <h2>Fall Collection</h2>
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown()">//</button>
+                    <button class="dropbtn" onclick="toggleDropdown()"> Gandolf's Quest</button>
                     <div class="dropdown-content">
-                        <a href="#">Gandalf's Quest</a>
-                        <a href="#">The Shire</a>
-                        <a href="#">Return of the King</a>
-                        <a href="#">Prancing Pony</a>
-                        <a href="#">Forest Magic</a>
-                        <a href="#">Lady Galadriel</a>
+                        <a class="gandolf" href="#">Gandalf's Quest</a>
+                        <a class="shire" href="#">The Shire</a>
+                        <a class="return" href="#">Return of the King</a>
+                        <a class="prancing" href="#">Prancing Pony</a>
+                        <a class="forest" href="#">Forest Magic</a>
+                        <a class="lady" href="#">Lady Galadriel</a>
                     </div>
                 </div>
             </div>
@@ -101,6 +101,14 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('.shire').click(function(){
+            $('.dropbtn').html('// Shire')
+        })
+        $('.prancing').click(function(){
+            $('.dropbtn').html('// Prancing')
+        })
+    </script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
