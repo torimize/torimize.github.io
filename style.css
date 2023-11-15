@@ -1,27 +1,54 @@
-        body {
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        h1 {
-            color:honeydew;
-            padding:40px;
-            flex: 3;
-        }
-        div {
-            width:80%;
-            margin:auto;
-            padding-top: 40px;
-            display: flex;
-        }
-        h3 {
-            color:honeydew;
-            padding:40px;
-            flex: 1;
-        }
-        .hero {
-            background-color:darkgreen;
-        }
-        p {
-            margin:auto;
-            width:80%;
-            padding:40px;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+    font-family: 'Agbalumo', '
+
+*/
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .hero {
+    background-color:darkgreen;
+    }
+  img {
+    width: 100%;
+  }
+   h1 {
+    margin: 0;
+    color:honeydew;
+    padding:20px;
+    flex: 1;
+  }
+  h3 {
+    width: 80%;
+    color:honeydew;
+    padding:20px;
+    flex: 1;
+  }
+
+  .parent {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .parent div {
+    flex: 1;
+  }
+  .parent .right {
+    padding-left: 40px;
+  }
+  .parent .left {
+    padding-right: 40px;
+  }
+  .two-col-content {
+    display: flex;
+  }
+  .two-col-content div {
+    flex: 1;
+  }
+  .two-col-content img {
+    padding: 10px;
+  }
