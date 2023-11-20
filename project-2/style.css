@@ -311,6 +311,49 @@ position:relative;
     line-height:24px;
   }
 
+  .shop {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .shop_image-wrapper {
+    padding: 1rem;
+    min-width: 8rem;
+    flex: 0 1 33.33%;
+  }
+
+  .store_image {}
+
+  .store_image-description {
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family:'Italiana', cursive;
+  font-size:32px;
+}
+
+  .store_image-graphic {
+  margin: 0 0 1rem 0;
+  /* Add small spacing between image and description */
+  padding: 0 0 56.25% 0;
+  /* Ratio trick to make sure the images are the same size. */
+  background-size: cover;
+  /* Make sure the image is alway filling/covering the box */
+  background-repeat: no-repeat;
+}
+
+.store_image-graphic-inline {
+  max-width: 100%;
+  margin: 0 0 1rem 0;
+  display: block;
+}
+
+button {
+  width:333px;
+  font-family:'Italiana', cursive;
+}
+
   footer {
     background-color:darkslategrey;
     color:white;
@@ -397,6 +440,10 @@ position:relative;
 
       .gallery a {
         width: calc(25% - 6px);
+      }
+
+      .store_image-wrapper {
+        flex: 1 1 100%;
       }
 
 }
