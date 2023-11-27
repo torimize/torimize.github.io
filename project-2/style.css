@@ -185,94 +185,96 @@ hr {
     border-top: 1px solid white;
 }
 
-  .container {
+.container {
     display:flex;
     border:2px solid red;
     color: white;
   }
-  .container div {
+.container div {
     flex:1;
   }
   
-  .centered {
-z-index:2;
-position:relative;
+.centered {
+  z-index:2;
+  position:relative;
   }
-  .centered h1 {
+.centered h1 {
     font-family:'Italiana', 'cursive';
     font-size:152px;
     margin:0;
     z-index:99;
   }
 
-  .centered h3 {
+.centered h3 {
     font-family:'Italiana', 'cursive';
     font-size:32px;
     margin:0;
   }
 
-  h1 {
+h1 {
     font-family:'Italiana', 'cursive';
     font-size:152px;
   }
 
-  h2 {
+h2 {
     font-family:'Italiana', 'cursive';
     font-size:48px;
   }
 
-  h3 {
+h3 {
     font-family:'Italiana', 'cursive';
     font-size:32px;
   }
 
-  .gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* or space-around */
+    justify-content: space-between;
   } 
   
-  .gallery a {
+.gallery a {
     display: inline-block;
     margin-bottom: 8px;
     width: calc(50% - 4px);
   }
 
-  .two-column-section {
+.two-column-section {
     display: flex;
     justify-content: space-between;
     padding: 20px;
   }
   
-  .left-column img {
+.left-column img {
     width: 100%;
     height: auto;
   }
 
-  .left-column {
+.left-column {
     width: 50%;
   }
   
-  .thumbnail-container {
+.thumbnail-container {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .thumbnail {
+.thumbnail {
     cursor: pointer;
     margin: 5px;
   }
   
-  .right-column {
+.right-column {
     width: 50%;
+    padding-left: 30px;
   }
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
+    padding-bottom:30px;
   }
   
-  .dropbtn {
+.dropbtn {
     background-color: black;
     color: white;
     padding: 10px;
@@ -281,65 +283,61 @@ position:relative;
     cursor: pointer;
   }
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
+    width:333px;
     position: absolute;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #555;
   }
 
-  ul {
+ul {
     list-style: none;
   }
 
-  p {
+p {
     font-family: 'montserrat', 'sans-serif';
     font-weight:200;
     font-size:20px;
     line-height:24px;
   }
 
-  .shop {
+.shop {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .shop_image-wrapper {
+.shop_image-wrapper {
     padding: 1rem;
     min-width: 8rem;
     flex: 0 1 33.33%;
   }
 
-  .store_image {}
-
-  .store_image-description {
+.store_image-description {
   word-wrap: break-word;
   word-break: break-word;
   font-family:'Italiana', cursive;
   font-size:32px;
 }
 
-  .store_image-graphic {
+.store_image-graphic {
   margin: 0 0 1rem 0;
-  /* Add small spacing between image and description */
   padding: 0 0 56.25% 0;
-  /* Ratio trick to make sure the images are the same size. */
   background-size: cover;
-  /* Make sure the image is alway filling/covering the box */
   background-repeat: no-repeat;
 }
 
@@ -354,8 +352,25 @@ button {
   font-family:'Italiana', cursive;
 }
 
-  footer {
-    background-color:darkslategrey;
+button .cart-add {
+  border-style: 2px solid goldenrod;
+  background-color:none;
+  text-decoration:none;
+  color:goldenrod;
+  font-size:32px;
+}
+
+.social-list {
+  display:flex;
+  flex-direction:row;
+}
+
+.box {
+  background-color:lightcoral;
+}
+
+footer {
+    background-color:rgb(67, 67, 67);
     color:white;
   }
 
@@ -444,6 +459,22 @@ button {
 
       .store_image-wrapper {
         flex: 1 1 100%;
+      }
+
+      .two-column-section {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        padding: 20px;
+      }
+    
+      .left-column {
+        flex:1;
+      }
+      
+      .right-column {
+        flex:1;
+        padding:0;
       }
 
 }
