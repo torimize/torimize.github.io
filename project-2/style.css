@@ -8,6 +8,22 @@ body {
     color:white;
 }
 
+.form button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 section {
     font-family:'Montserrat', 'sans-serif';
     width:80%;
@@ -79,7 +95,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 6px 20px 0 rgb(255 207 207 / 91%);
     transition: .5s;
 }
 
@@ -226,16 +242,28 @@ h3 {
     font-size:32px;
   }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  } 
+  .instagram {
+    margin-bottom:40px;
+  }
   
-.gallery a {
-    display: inline-block;
-    margin-bottom: 8px;
-    width: calc(50% - 4px);
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
   }
 
 .two-column-section {
@@ -256,11 +284,17 @@ h3 {
 .thumbnail-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
   }
   
 .thumbnail {
     cursor: pointer;
     margin: 5px;
+    flex-direction:row;
+  }
+
+  .thumbnail img {
+    width:20%;
   }
   
 .right-column {
@@ -314,14 +348,14 @@ p {
     line-height:24px;
   }
 
-.shop {
+.store {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-.shop_image-wrapper {
+.store_image-wrapper {
     padding: 1rem;
     min-width: 8rem;
     flex: 0 1 33.33%;
@@ -335,26 +369,26 @@ p {
 }
 
 .store_image-graphic {
-  margin: 0 0 1rem 0;
-  padding: 0 0 56.25% 0;
+  margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .store_image-graphic-inline {
-  max-width: 100%;
-  margin: 0 0 1rem 0;
+  margin: auto;
+  padding:20px;
   display: block;
+  width:100%;
 }
 
-button {
+.add button {
   width:333px;
   font-family:'Italiana', cursive;
 }
 
-button .cart-add {
+.add button {
   border-style: 2px solid goldenrod;
-  background-color:none;
+  background-color:black;
   text-decoration:none;
   color:goldenrod;
   font-size:32px;
@@ -367,7 +401,169 @@ button .cart-add {
 
 .box {
   background-color:lightcoral;
+  padding:5%;
 }
+
+.title{
+  margin-bottom: 5vh;
+}
+.card{
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+.cart{
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.summary{
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+
+  .summary .col-2{
+    padding: 0;
+}
+}
+.summary .col-10
+{
+    padding: 0;
+}.row{
+    margin: 0;
+}
+.title b{
+    font-size: 1.5rem;
+}
+.main{
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+}
+.col-2, .col{
+    padding: 0 1vh;
+}
+a{
+    padding: 0 1vh;
+}
+.close{
+    margin-left: auto;
+    font-size: 0.7rem;
+}
+img{
+    width: 3.5rem;
+}
+.back-to-shop{
+    margin-top: 4.5rem;
+}
+h5{
+    margin-top: 4vh;
+}
+hr{
+    margin-top: 1.25rem;
+}
+
+button [type="submit"] {
+  border: 2px solid darkgoldenrod;
+  color:goldenrod;
+  border-radius: 0.25rem;
+  margin-top:10px;
+}
+
+button [type="submit"]:hover {
+  background-color: hsl(213, 73%, 40%);
+}
+
+form{
+    padding: 2vh 0;
+}
+
+.form input,
+select {
+  border: 2px solid darkgoldenrod;
+  color:goldenrod;
+  border-radius: 0.25rem;
+  margin-top:10px;
+}
+
+textarea {
+  margin-top:10px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid darkgoldenrod;
+  color:goldenrod;
+  border-radius: 4px;
+  resize: none;
+}
+
+select{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+}
+input:focus::-webkit-input-placeholder
+{
+      color:transparent;
+}
+.btn{
+    border-color: darkgoldenrod;
+    color: darkgoldenrod;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border-radius: 0;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: goldenrod;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none; 
+}
+.btn:hover{
+    color: goldenrod;
+}
+a{
+    color: darkgoldenrod; 
+}
+a:hover{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+img {
+  width:100%;
+}
+
+.img-fluid {
+  width:30%;
+}
+
+ /* #code{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+} */
 
 footer {
     background-color:rgb(67, 67, 67);
@@ -427,17 +623,21 @@ footer {
         flex: 50%;
         max-width: 50%;
       }
-
-      .gallery a {
-        width: calc(25% - 6px);
-      }
     /* END of desktop menu for 768 media query */
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
 /* If the screen is smaller than 768 */
 @media only screen and (max-width: 768px) {
     .flex {
         flex-direction:column;
+        padding-top:175px;
     }
     .flex .left {
         padding:0;
@@ -453,8 +653,8 @@ footer {
         max-width: 100%;
       }
 
-      .gallery a {
-        width: calc(25% - 6px);
+      .responsive {
+        width: 100%;
       }
 
       .store_image-wrapper {
@@ -477,4 +677,43 @@ footer {
         padding:0;
       }
 
+      .centered {
+        z-index:2;
+        position:relative;
+        }
+      .centered h1 {
+          font-family:'Italiana', 'cursive';
+          font-size:68px;
+          margin:0;
+          z-index:99;
+        }
+      
+      .centered h3 {
+          font-family:'Italiana', 'cursive';
+          font-size:32px;
+          margin:0;
+        }
+
+        .candle {
+          position:absolute;
+          z-index:-1;
+        }
+
+        .cart{
+          padding: 4vh;
+          border-bottom-left-radius: unset;
+          border-top-right-radius: 1rem;
+      }
+
+      .summary{
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem;
+        }
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
