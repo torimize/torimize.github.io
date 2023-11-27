@@ -468,15 +468,14 @@ hr{
     margin-top: 1.25rem;
 }
 
-button [type="submit"] {
-  border: 2px solid darkgoldenrod;
-  color:goldenrod;
-  border-radius: 0.25rem;
+.form button {
   margin-top:10px;
-}
-
-button [type="submit"]:hover {
-  background-color: hsl(213, 73%, 40%);
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid darkgoldenrod !important;
+  color:goldenrod;
+  border-radius: 4px;
+  resize: none;
 }
 
 form{
@@ -521,27 +520,29 @@ input:focus::-webkit-input-placeholder
 {
       color:transparent;
 }
-.btn{
-    border-color: darkgoldenrod;
-    color: darkgoldenrod;
-    width: 100%;
-    font-size: 0.7rem;
-    margin-top: 4vh;
-    padding: 1vh;
-    border-radius: 0;
+
+.dropbtn button{
+  border-color: darkgoldenrod;
+  color: darkgoldenrod;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
 }
-.btn:focus{
-    box-shadow: none;
-    outline: none;
-    box-shadow: none;
-    color: goldenrod;
-    -webkit-box-shadow: none;
-    -webkit-user-select: none;
-    transition: none; 
+.dropbtn button:focus{
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  color: goldenrod;
+  -webkit-box-shadow: none;
+  -webkit-user-select: none;
+  transition: none; 
 }
-.btn:hover{
-    color: goldenrod;
+btn:hover{
+  color: goldenrod;
 }
+
 a{
     color: darkgoldenrod; 
 }

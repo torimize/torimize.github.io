@@ -1,4 +1,3 @@
-'use strict'
 
 function toggleIcon() {
     $('.icon').on('click', function(){
@@ -12,10 +11,6 @@ function closeMobileMenu(){
         $('.icon').trigger('click');
     })
 }
-
-//when the page loads call toggleIcon;
-$(toggleIcon);
-$(closeMobileMenu);
 
 function changeImage(imagePath) {
     $("#main-image").attr("src", imagePath);
@@ -32,27 +27,17 @@ for (var i = 0; i < navItems.length; i++) {
    });
 }
 
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
+$('.my-slick').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed:3500,
+  infinite:true,
+  dots:true,
+  draggable:false,
+})
 
-
- $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
   
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-  });
-  
+  //when the page loads call toggleIcon;
+$(toggleIcon);
+$(closeMobileMenu);
