@@ -567,14 +567,10 @@ img {
 } */
 
 .slideshow {
-  width:80%;
+  width: 50%;
   margin:auto;
   display:flex;
   align-items:center;
-}
-
-.slideimg {
-  height:50%;
 }
 
 .slideshow .slide {

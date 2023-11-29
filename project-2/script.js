@@ -30,22 +30,22 @@ for (var i = 0; i < navItems.length; i++) {
 const slideList = [
   {
   id: 1,
-  text: 'first slide',
+  text: 'An enchanting atmosphere where you can take your armor off and relax…',
   src: 'images/inside-a.png'
 },
 {
   id: 2,
-  text: 'second slide',
+  text: 'An enchanting atmosphere where you can take your armor off and relax…',
   src: 'images/inside-b.png'
 },
 {
   id: 3,
-  text: 'third slide',
+  text: 'An enchanting atmosphere where you can take your armor off and relax…',
   src: 'images/inside-c.png'
 },
   {
   id: 4,
-  text: 'fourth slide',
+  text: 'An enchanting atmosphere where you can take your armor off and relax…',
   src: 'images/inside-d.png'
 },
 ]
