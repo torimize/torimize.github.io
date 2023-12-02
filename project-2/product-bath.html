@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBD Bath Bomb Product</title>
+    <title>Fall Collection Product</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
     <header class="nav">
@@ -13,11 +18,11 @@
             <div class="hamburger"></div>
         </div>
         <div class="menu-mobile">
-            <a href="#intro-section">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+          <a href="about.html">About</a>
+          <a href="inside.html">An Inside Look</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
         </div>        
     </header>
     <header class="desktop">
@@ -32,37 +37,47 @@
     </header>
     <main>
         <section class="two-column-section">
-            <!-- Left Column with Product Image and Thumbnails -->
             <div class="left-column">
-                <img id="main-image" src="http://placekitten.com/400/400" alt="Main Product">
+                <img id="main-image" src="images/rose-cbd.png" alt="Main Product">
                 <div class="thumbnail-container">
-                    <div class="thumbnail" onclick="changeImage('http://placekitten.com/200/202')">
-                        <img src="http://placekitten.com/200/202" alt="Thumbnail 1">
+                    <div class="thumbnail" onclick="changeImage('images/geranium-cbd.png')">
+                        <img src="images/geranium-cbd.png" alt="Thumbnail 1">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail2.jpg')">
-                        <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                    <div class="thumbnail" onclick="changeImage('images/nag-cbd.png')">
+                        <img src="images/nag-cbd.png" alt="Thumbnail 2">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail3.jpg')">
-                        <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                    <div class="thumbnail" onclick="changeImage('images/lavender-cbd.png')">
+                        <img src="images/lavender-cbd.png" alt="Thumbnail 3">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail4.jpg')">
-                        <img src="thumbnail4.jpg" alt="Thumbnail 4">
+                    <div class="thumbnail" onclick="changeImage('images/patchouli-cbd.png')">
+                        <img src="images/patchouli-cbd.png" alt="Thumbnail 4">
                     </div>
                 </div>
             </div>
     
-            <!-- Right Column with Heading and Dropdown Menu -->
             <div class="right-column">
-                <h2>Fall Collection</h2>
+                <h2>CBD Bath Bombs</h2>
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown()"> Pick A Scent</button>
+                    <button class="dropbtn" onclick="toggleDropdown()"> Geranium and Grapefruit</button>
                     <div class="dropdown-content">
-                        <a class="geranium" href="#">Geranium + Grapefruit</a>
-                        <a class="lavender" href="#">Lavender</a>
-                        <a class="champa" href="#">Nag Champa</a>
-                        <a class="patchouli" href="#">Patchouli</a>
-                        <a class="rose" href="#">Rose</a>
+                        <a class="gandalf" href="#">Geranium and Grapefruit</a>
+                        <a class="shire" href="#">Nag Champa</a>
+                        <a class="prancing" href="#">Lavender</a>
+                        <a class="forest" href="#">Rose</a>
+                        <a class="lady" href="#">Patchouli</a>
                     </div>
+                </div>
+                <div class="form">
+                    <button type="submit" id="myBtn" class="add">Add to Cart</button>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p>Added to Cart!</p>
+                        </div>
+                      
+                      </div>
                 </div>
             </div>
         </section>
@@ -71,50 +86,83 @@
             <div class="left-column">
                 <h3>Description</h3>
                 <p>Therapeutic and magical, the bath bombs are made of baking soda, citric acid, Epsom salt, corn starch, polysorbate 80, oat extract, chamomile extract, calendula extract, sweet almond oil, Bulgarian lavender essential oil, colloidal oatmeal, hemp CBD isolate.</p>
-                <p><strong>Contains 100mg CBD isolate.</strong></p>
+                <p>Contains 100mg CBD isolate.</p>
             </div>
     
             <div class="right-column">
                 <h3>Scents</h3>
                 <ul>
-                    <li><strong>Geranium and Grapefruit:</strong> Geranium + Grapefruit + Calendula, Dragonfruit, & Agave Extract</li>
+                    <li><strong>Geranium and Grapefruit</strong> Geranium + Grapefruit + Calendula, Dragonfruit, & Agave Extract</li>
                     <li><strong>Lavender:</strong> Lavender + Calendula + Oat Extract, Chamomile Extract, & Colloidal Oats</li>
                     <li><strong>Nag Champa:</strong> Nag Champa + Aloe, Agave, & Seaweed Extracts</li>
-                    <li><strong>Patchouli:</strong> Patchouli + Lavender + Orange + Black Raspberry Seed Oil, & Aloe Extract</li>
                     <li><strong>Rose:</strong> Rose + Rose Extract, Rose Clay, & Rosehip Seed Oil</li>
+                    <li><strong>Patchouli:</strong> Patchouli + Lavender + Orange + Black Raspberry Seed Oil, & Aloe Extract</li>
                 </ul>
             </div>
         </section>
 
     </main>
     <footer>
-        <div>
-            
-        </div>
-        <div>
-            
-        </div>
-        
-    </footer>
+        <section class="two-column-section">
+          <div class="left-column">
+              <h3>Ritual97123</h3>
+          </div>
+  
+          <div class="right-column">
+              <ul class="social-list">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-instagram"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+              </ul>
+          </div>
+      </section>
+      
+      </footer>
 
-    <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script>
-        $('.geranium').click(function(){
+        $('.gandalf').click(function(){
             $('.dropbtn').html('Geranium + Grapefruit')
         })
-        $('.lavender').click(function(){
+        $('.shire').click(function(){
             $('.dropbtn').html('Lavender')
         })
-        $('.champa').click(function(){
+        $('.prancing').click(function(){
             $('.dropbtn').html('Nag Champa')
         })
-        $('.patchouli').click(function(){
-            $('.dropbtn').html('Patchouli')
-        })
-        $('.rose').click(function(){
+        $('.forest').click(function(){
             $('.dropbtn').html('Rose')
         })
+        $('.lady').click(function(){
+            $('.dropbtn').html('Patchouli')
+        })
+
+
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
     </script>
 
 </body>

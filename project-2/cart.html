@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
     <header class="nav">
@@ -13,11 +18,11 @@
             <div class="hamburger"></div>
         </div>
         <div class="menu-mobile">
-            <a href="#intro-section">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+          <a href="about.html">About</a>
+          <a href="inside.html">An Inside Look</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
         </div>        
     </header>
     <header class="desktop">
@@ -31,54 +36,100 @@
         </div>
     </header>
     <main>
-        <div class="card">
-            <div class="row">
-                <div class="col-md-8 cart">
-                    <div class="title">
-                        <div class="row">
-                            <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                            <div class="col align-self-center text-right text-muted">1 item</div>
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <div class="row main align-items-center">
-                            <div class="col-2"><img class="img-fluid" src="http://placekitten.com/200/202"></div>
-                            <div class="col">
-                                <div class="row text-muted">Shirt</div>
-                                <div class="row">Cotton T-shirt</div>
-                            </div>
-                            <div class="col">
-                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                            </div>
-                            <div class="col">&dollar; 44.00 <span class="close">&#10005;</span></div>
-                        </div>
-                    </div>
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr">Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
                 </div>
-                <div class="col-md-4 summary">
-                    <div><h5><b>Summary</b></h5></div>
-                    <hr>
-                    <div class="row">
-                        <div class="col" style="padding-left:0;">ITEMS 1</div>
-                        <div class="col text-right">&dollar; 132.00</div>
-                    </div>
-                    <form>
-                        <p>SHIPPING</p>
-                        <select><option class="text-muted">Standard-Delivery- &dollar;5.00</option></select>
-                        <p>GIVE CODE</p>
-                        <input id="code" placeholder="Enter your code">
-                    </form>
-                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                        <div class="col">TOTAL PRICE</div>
-                        <div class="col text-right">&dollar; 137.00</div>
-                    </div>
-                    <button class="btn">CHECKOUT</button>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
                 </div>
+              </div>
             </div>
-        </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+  
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price">
+            <i class="fa fa-shopping-cart"><b>2</b></i>
+          </span>
+        </h4>
+        <p><a href="#">Spa Day Mist</a> <span class="price">$15</span></p>
+        <p><a href="#">Autumn Journal</a> <span class="price">$5</span></p>
+        <hr>
+        <p>Total <span class="price"><b>$20</b></span></p>
+      </div>
+    </div>
+  </div>
     </main>
+
     <footer>
-        
-    </footer>
+        <section class="two-column-section">
+          <div class="left-column">
+              <h3>Ritual97123</h3>
+          </div>
+  
+          <div class="right-column">
+              <ul class="social-list">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-instagram"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+              </ul>
+          </div>
+      </section>
+      </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
@@ -86,5 +137,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
     <script type="text/javascript" src="script.js"></script>
+
+    <script> var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }</script>
 </body>
 </html>

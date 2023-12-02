@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whimsical Journal Product</title>
+    <title>Fall Collection Product</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
     <header class="nav">
@@ -13,11 +18,11 @@
             <div class="hamburger"></div>
         </div>
         <div class="menu-mobile">
-            <a href="#intro-section">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+          <a href="about.html">About</a>
+          <a href="inside.html">An Inside Look</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
         </div>        
     </header>
     <header class="desktop">
@@ -32,84 +37,99 @@
     </header>
     <main>
         <section class="two-column-section">
-            <!-- Left Column with Product Image and Thumbnails -->
             <div class="left-column">
-                <img id="main-image" src="http://placekitten.com/400/400" alt="Main Product">
+                <img id="main-image" src="images/whimsy-1.png" alt="Main Product">
                 <div class="thumbnail-container">
-                    <div class="thumbnail" onclick="changeImage('http://placekitten.com/200/202')">
-                        <img src="http://placekitten.com/200/202" alt="Thumbnail 1">
+                    <div class="thumbnail" onclick="changeImage('images/whimsy-1.png')">
+                        <img src="images/whimsy-1.png" alt="Thumbnail 1">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail2.jpg')">
-                        <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                    <div class="thumbnail" onclick="changeImage('images/whimsy-2.png')">
+                        <img src="images/whimsy-2.png" alt="Thumbnail 2">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail3.jpg')">
-                        <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                    <div class="thumbnail" onclick="changeImage('images/whimsy-3.png')">
+                        <img src="images/whimsy-3.png" alt="Thumbnail 3">
                     </div>
-                    <div class="thumbnail" onclick="changeImage('thumbnail4.jpg')">
-                        <img src="thumbnail4.jpg" alt="Thumbnail 4">
+                    <div class="thumbnail" onclick="changeImage('images/whimsy-4.png')">
+                        <img src="images/whimsy-4.png" alt="Thumbnail 4">
                     </div>
                 </div>
             </div>
     
-            <!-- Right Column with Heading and Dropdown Menu -->
             <div class="right-column">
-                <h2>Whimsical Journal</h2>
-                
+                <h2>Whimsy Journal</h2>
+                <div class="form">
+                    <button type="submit" id="myBtn" class="add">Add to Cart</button>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p>Added to Cart!</p>
+                        </div>
+                      
+                      </div>
+                </div>
             </div>
         </section>
 
         <section class="two-column-section">
             <div class="left-column">
                 <h3>Description</h3>
-                <p>In this 2023 collection, we have carefully selected Lord of the Rings as our primary source of inspiration. By delving into this enchanting saga, we have curated a captivating array of six distinct aromas that effortlessly evoke the essence of this epic tale.</p>
-                <p>As the season transitions into autumn, we find ourselves mesmerized by the captivating spectacle of the changing foliage, allowing us to taste the invigorating crispness in the air. With each waft of our meticulously crafted products, our customers are transported to a time when strolling through the majestic woods was not merely a leisurely activity, but a mode of travel filled with wonder and adventure.</p>
-                <p>Each of our soap and candle products is lovingly and impeccably handcrafted in small, specialized batches to ensure the utmost quality and attention to detail.</p>
+                <p>Having a journal is not only a wonderful way to share your thoughts with yourself, but it also serves as a therapeutic tool for decompressing after a long day. Journaling has been a long-time honored practice that allows individuals to track their goals, desires, and personal growth. At Ritual Soap & Candle, I understand the importance of creating a journaling experience that brings in soft floral elements with vintage vibes. That's why I have designed a few journal pages that perfectly encapsulate this aesthetic.</p>
             </div>
     
             <div class="right-column">
-                &nbsp;
+                <br>
             </div>
         </section>
 
     </main>
     <footer>
         <section class="two-column-section">
-            <div class="left-column">
-                <h3>Ritual97123</h3>
-            </div>
-    
-            <div class="right-column">
-                <ul class="social-list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+          <div class="left-column">
+              <h3>Ritual97123</h3>
+          </div>
+  
+          <div class="right-column">
+              <ul class="social-list">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-instagram"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+              </ul>
+          </div>
+      </section>
+      
+      </footer>
 
-    <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script>
-        $('.gandalf').click(function(){
-            $('.dropbtn').html('Gandalfs Quest')
-        })
-        $('.shire').click(function(){
-            $('.dropbtn').html('The Shire')
-        })
-        $('.prancing').click(function(){
-            $('.dropbtn').html('Prancing Pony')
-        })
-        $('.return').click(function(){
-            $('.dropbtn').html('Return of the King')
-        })
-        $('.forest').click(function(){
-            $('.dropbtn').html('Forest Magic')
-        })
-        $('.lady').click(function(){
-            $('.dropbtn').html('Lady Galandrial')
-        })
+
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
     </script>
+
 </body>
 </html>
